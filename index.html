@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>ALURA LATAM</h1>
+    </header>
+    <main>
+        <!-- Caja de texto y botones -->
+        <section class="seccion_encriptador">
+            <div class="contenedor_textarea">
+                <textarea id="textoencriptar" class="cajatextoencriptar" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div>
+                <p id="textoinfo"><img src="/assets/iconoinfo.png" alt="imageninfo" id="imageninfo"> Solo letras minusculas y sin acentos o simbolos</p>
+            </div>
+            <div class="contenedor_textarea_botones">
+                <button onclick="encriptar();" class="encriptar" type="submit">Encriptar</button>
+                <button onclick="desencriptar();" class="desencriptar" type="submit">Desencriptar</button>
+        
+            </div>
+        </section>
+        <!-- Resultado -->
+        <section class="seccion_resultado">
+            <div class="seccion_contenido_resultado">
+                <img src="/assets/imagenpersona.JPG" alt="imagendeunapersona" id="imagen_persona" >
+                <h2>Ningun mensaje fue encontrado</h2>
+                <p>Ingrese el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="seccion_contenido_textarea_resultado">
+                <textarea name="" id="caja_resultado" class="cajatextodesencriptar"></textarea>
+                <div class="contenedor_boton_copiar">
+                    <button onclick="copiartexto()" id="boton_copiar" hidden>Copiar</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <!-- Claramente es el footer -->
+    <footer>
+        <p>Creado por Luis Araiza. Agosto-2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
